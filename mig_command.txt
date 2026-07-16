@@ -12,3 +12,11 @@ uvicorn app.main:app --reload
 
 
 #4 pip install "bcrypt==4.0.1"
+
+
+
+
+#yangi yaratilgan entity uchun migration
+
+ #5  alembic revision --autogenerate -m "Add computers table"
+     alembic upgrade head

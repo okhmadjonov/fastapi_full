@@ -13,7 +13,7 @@ from alembic import context
 from app.core.config import settings
 from app.core.database import Base
 from app.modules.users.models import User  
-
+from app.modules.computers.models import Computer
 config = context.config
 
 
