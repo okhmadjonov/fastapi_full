@@ -1,0 +1,14 @@
+# 0  pip install -r requirements.txt
+
+# 1. Avtomatik migratsiya faylini yaratish
+alembic revision --autogenerate -m "Initial migration"
+
+# 2. Ushbu migratsiyani bazaga tushirish
+alembic upgrade head
+
+# 3 running
+
+uvicorn app.main:app --reload
+
+
+#4 pip install "bcrypt==4.0.1"
